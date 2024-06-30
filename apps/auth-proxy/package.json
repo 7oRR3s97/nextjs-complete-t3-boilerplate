@@ -1,0 +1,35 @@
+{
+  "name": "@monorepo/auth-proxy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nitro build",
+    "clean": "rm -rf .turbo node_modules",
+    "dev": "nitro dev --port 3001",
+    "lint": "eslint .",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@auth/core": "0.28.1"
+  },
+  "devDependencies": {
+    "@monorepo/eslint-config": "workspace:*",
+    "@monorepo/prettier-config": "workspace:*",
+    "@monorepo/tailwind-config": "workspace:*",
+    "@monorepo/tsconfig": "workspace:*",
+    "@types/node": "^20.11.30",
+    "eslint": "^9.4.0",
+    "h3": "^1.11.1",
+    "nitropack": "^2.9.4",
+    "prettier": "^3.3.1",
+    "typescript": "^5.5.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@monorepo/eslint-config/base"
+    ]
+  },
+  "prettier": "@monorepo/prettier-config"
+}

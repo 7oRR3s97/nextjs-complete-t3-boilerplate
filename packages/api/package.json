@@ -1,0 +1,52 @@
+{
+  "name": "@monorepo/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@monorepo/auth": "workspace:*",
+    "@monorepo/db": "workspace:*",
+    "@monorepo/validators": "workspace:*",
+    "@trpc/server": "11.0.0-next.320",
+    "@upstash/ratelimit": "^1.1.2",
+    "@upstash/redis": "^1.30.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.1.0",
+    "stripe": "^15.2.0",
+    "superjson": "2.2.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@monorepo/eslint-config": "workspace:*",
+    "@monorepo/prettier-config": "workspace:*",
+    "@monorepo/tsconfig": "workspace:*",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "eslint": "^9.4.0",
+    "prettier": "^3.3.1",
+    "typescript": "^5.5.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@monorepo/eslint-config/base"
+    ]
+  },
+  "prettier": "@monorepo/prettier-config"
+}
