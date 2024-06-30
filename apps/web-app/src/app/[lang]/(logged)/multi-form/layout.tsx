@@ -1,4 +1,4 @@
-export default async function MultiFormLayout({
+export default function MultiFormLayout({
   children,
 }: {
   children: React.ReactNode;

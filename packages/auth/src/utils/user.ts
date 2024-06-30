@@ -37,7 +37,7 @@ export const getUserById = async ({
       where: eq(schema.users.id, id),
     });
     return user;
-  } catch (error) {
+  } catch {
     return undefined;
   }
 };

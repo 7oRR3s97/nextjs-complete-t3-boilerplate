@@ -81,12 +81,8 @@
           "name": "nextjs_boilerplate_development_account_userId_nextjs_boilerplate_development_user_id_fk",
           "tableFrom": "nextjs_boilerplate_development_account",
           "tableTo": "nextjs_boilerplate_development_user",
-          "columnsFrom": [
-            "userId"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -94,10 +90,7 @@
       "compositePrimaryKeys": {
         "nextjs_boilerplate_development_account_provider_providerAccountId_pk": {
           "name": "nextjs_boilerplate_development_account_provider_providerAccountId_pk",
-          "columns": [
-            "provider",
-            "providerAccountId"
-          ]
+          "columns": ["provider", "providerAccountId"]
         }
       },
       "uniqueConstraints": {}
@@ -137,10 +130,7 @@
       "compositePrimaryKeys": {
         "nextjs_boilerplate_development_passwordResetToken_email_token_pk": {
           "name": "nextjs_boilerplate_development_passwordResetToken_email_token_pk",
-          "columns": [
-            "email",
-            "token"
-          ]
+          "columns": ["email", "token"]
         }
       },
       "uniqueConstraints": {}
@@ -174,12 +164,8 @@
           "name": "nextjs_boilerplate_development_session_userId_nextjs_boilerplate_development_user_id_fk",
           "tableFrom": "nextjs_boilerplate_development_session",
           "tableTo": "nextjs_boilerplate_development_user",
-          "columnsFrom": [
-            "userId"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -211,12 +197,8 @@
           "name": "nextjs_boilerplate_development_twoFactorConfirmation_userId_nextjs_boilerplate_development_user_id_fk",
           "tableFrom": "nextjs_boilerplate_development_twoFactorConfirmation",
           "tableTo": "nextjs_boilerplate_development_user",
-          "columnsFrom": [
-            "userId"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["userId"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -259,10 +241,7 @@
       "compositePrimaryKeys": {
         "nextjs_boilerplate_development_twoFactorToken_email_token_pk": {
           "name": "nextjs_boilerplate_development_twoFactorToken_email_token_pk",
-          "columns": [
-            "email",
-            "token"
-          ]
+          "columns": ["email", "token"]
         }
       },
       "uniqueConstraints": {}
@@ -369,10 +348,7 @@
       "compositePrimaryKeys": {
         "nextjs_boilerplate_development_verificationToken_email_token_pk": {
           "name": "nextjs_boilerplate_development_verificationToken_email_token_pk",
-          "columns": [
-            "email",
-            "token"
-          ]
+          "columns": ["email", "token"]
         }
       },
       "uniqueConstraints": {}
@@ -432,12 +408,8 @@
           "name": "nextjs_boilerplate_development_post_author_id_nextjs_boilerplate_development_user_id_fk",
           "tableFrom": "nextjs_boilerplate_development_post",
           "tableTo": "nextjs_boilerplate_development_user",
-          "columnsFrom": [
-            "author_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["author_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
