@@ -1,0 +1,57 @@
+{
+  "name": "@monorepo/auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "react-server": "./src/index.rsc.ts",
+      "default": "./src/index.ts"
+    },
+    "./env": "./env.ts",
+    "./utils": "./src/utils/index.ts",
+    "./routes": "./src/routes.ts"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@auth/drizzle-adapter": "^0.8.1",
+    "@monorepo/db": "workspace:*",
+    "@monorepo/validators": "workspace:*",
+    "@t3-oss/env-nextjs": "^0.9.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "next": "^14.2.3",
+    "next-auth": "5.0.0-beta.16",
+    "posthog-node": "^4.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "resend": "^2.1.0",
+    "stripe": "^15.2.0",
+    "uuid": "^9.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@monorepo/eslint-config": "workspace:*",
+    "@monorepo/prettier-config": "workspace:*",
+    "@monorepo/tsconfig": "workspace:*",
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/uuid": "^9.0.7",
+    "eslint": "^9.4.0",
+    "prettier": "^3.3.1",
+    "typescript": "^5.5.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@monorepo/eslint-config/base"
+    ]
+  },
+  "prettier": "@monorepo/prettier-config"
+}
