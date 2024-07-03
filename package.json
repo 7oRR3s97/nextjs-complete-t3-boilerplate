@@ -15,6 +15,7 @@
     "db:studio": "pnpm -F db studio",
     "dev": "turbo watch dev",
     "dev:web-app": "turbo watch dev -F @monorepo/web-app...",
+    "dev:storybook": "turbo watch dev -F @monorepo/storybook...",
     "format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
     "format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
     "lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
@@ -22,14 +23,15 @@
     "lint:ws": "pnpm dlx sherif@latest",
     "postinstall": "pnpm lint:ws",
     "typecheck": "turbo typecheck",
-    "ui-add": "turbo run ui-add"
+    "ui-add": "turbo run ui-add",
+    "knip": "knip"
   },
   "devDependencies": {
     "@monorepo/prettier-config": "workspace:*",
-    "@turbo/gen": "^2.0.6",
-    "prettier": "^3.3.1",
+    "@types/node": "^20.14.9",
     "turbo": "^2.0.6",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "knip": "^5.23.3"
   },
   "prettier": "@monorepo/prettier-config"
 }

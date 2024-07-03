@@ -24,7 +24,8 @@
     "./card": "./src/base/ui/card.tsx",
     "./switch": "./src/base/ui/switch.tsx",
     "./sonner": "./src/base/ui/sonner.tsx",
-    "./password-input": "./src/base/components/password-input.tsx"
+    "./password-input": "./src/base/components/password-input.tsx",
+    "./dialog": "./src/base/ui/dialog.tsx"
   },
   "license": "MIT",
   "scripts": {
@@ -86,11 +87,11 @@
     "@monorepo/prettier-config": "workspace:*",
     "@monorepo/tailwind-config": "workspace:*",
     "@monorepo/tsconfig": "workspace:*",
-    "@types/react": "^18.2.69",
+    "@types/react": "^18.3.2",
     "eslint": "^9.4.0",
     "prettier": "^3.3.1",
     "react": "18.3.1",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.5.2",
     "zod": "^3.23.8"
   },

@@ -6,7 +6,8 @@
   "exports": {
     "./base": "./base.js",
     "./nextjs": "./nextjs.js",
-    "./react": "./react.js"
+    "./react": "./react.js",
+    "./storybook": "./storybook.js"
   },
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
@@ -19,6 +20,8 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "rc",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-turbo": "^2.0.3",
     "typescript-eslint": "rc-v8"
   },
