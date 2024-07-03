@@ -1,5 +1,5 @@
+import type { StoryObj } from "@storybook/react";
 import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
 import { Copy } from "lucide-react";
 
 import { Button } from "@monorepo/ui/button";
@@ -61,7 +61,7 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-} satisfies Meta<{}>;
+};
 
 export default meta;
 
