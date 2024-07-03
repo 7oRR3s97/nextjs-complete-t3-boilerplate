@@ -1,5 +1,5 @@
+import type { StoryObj } from "@storybook/react";
 import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "@monorepo/ui/button";
 import { Input } from "@monorepo/ui/input";
@@ -62,7 +62,7 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-} satisfies Meta<{}>;
+};
 
 export default meta;
 
