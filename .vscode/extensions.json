@@ -1,9 +1,11 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "expo.vscode-expo-tools",
     "esbenp.prettier-vscode",
     "yoavbls.pretty-ts-errors",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "sonarsource.sonarlint-vscode",
+    "aaron-bond.better-comments",
+    "wix.vscode-import-cost"
   ]
 }
